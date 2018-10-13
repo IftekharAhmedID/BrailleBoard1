@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6E87E4EA-D77C-4DF6-8E17-3725664F1EA4}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App2</RootNamespace>
+    <AssemblyName>App2</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>App2_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>arm</AppxBundlePlatforms>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>
+    <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpenWeather.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="App2_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\NCTB\Class 5\Amar Bangla Boi\Ei desh ei manush\1.mp3" />
+    <Content Include="Assets\NCTB\Class 5\Amar Bangla Boi\Ei desh ei manush\2.mp3" />
+    <Content Include="Assets\NCTB\Class 5\Amar Bangla Boi\Ei desh ei manush\3.mp3" />
+    <Content Include="Assets\NCTB\Class 5\Amar Bangla Boi\Ei desh ei manush\4.mp3" />
+    <Content Include="Assets\NCTB\Class 5\Amar Bangla Boi\Ei desh ei manush\5.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\02boipora\1.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\02boipora\2.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\02boipora\3.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\02boipora\4.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\10probasbondhu.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\01suva.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\02boipora.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\03ovagirsorgo.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\03ovagirsorgo\1.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\03ovagirsorgo\2.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\03ovagirsorgo\3.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\03ovagirsorgo\4.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\04pollisomaj.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\05amati.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\06mohammad.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\07nilgas.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\08upekhito.mp3" />
+    <Content Include="Assets\NCTB\Class 9-10\Bangla Sahitto\09sikhaomonussoto.mp3" />
+    <Content Include="Assets\Novels\Bibhutibhushan Bandyopadhyay\1.mp3" />
+    <Content Include="Assets\Novels\Bibhutibhushan Bandyopadhyay\2.mp3" />
+    <Content Include="Assets\Novels\Bibhutibhushan Bandyopadhyay\3.mp3" />
+    <Content Include="Assets\Novels\Bibhutibhushan Bandyopadhyay\4.mp3" />
+    <Content Include="Assets\Novels\Bibhutibhushan Bandyopadhyay\5.mp3" />
+    <Content Include="Assets\Novels\Humayun Ahmed\1.mp3" />
+    <Content Include="Assets\Novels\Humayun Ahmed\2.mp3" />
+    <Content Include="Assets\Novels\Humayun Ahmed\3.mp3" />
+    <Content Include="Assets\Novels\Md. Jafor Iqbal\1.mp3" />
+    <Content Include="Assets\Novels\Md. Jafor Iqbal\2.mp3" />
+    <Content Include="Assets\Novels\Sarat Chandra Chattopadhyay\1.mp3" />
+    <Content Include="Assets\Novels\Sarat Chandra Chattopadhyay\2.mp3" />
+    <Content Include="Assets\Novels\Satyajit Ray\1.mp3" />
+    <Content Include="Assets\Novels\Satyajit Ray\2.mp3" />
+    <Content Include="Assets\Novels\Satyajit Ray\3.mp3" />
+    <Content Include="Assets\Quran\001 Surah Al-Fatihah.mp3" />
+    <Content Include="Assets\Quran\002 Surah Al-Baqarah.mp3" />
+    <Content Include="Assets\Quran\003 Surah Al-Imran.mp3" />
+    <Content Include="Assets\Quran\004 Surah An-Nisa.mp3" />
+    <Content Include="Assets\Quran\005 Surah Al-Maidah.mp3" />
+    <Content Include="Assets\Quran\006 Surah Al-Anam.mp3" />
+    <Content Include="Assets\Quran\007 Surah Al-A%27raf.mp3" />
+    <Content Include="Assets\Quran\008 Surah Al-Anfal.mp3" />
+    <Content Include="Assets\Quran\009 Surah Al-Bara%27at.mp3" />
+    <Content Include="Assets\Quran\010 Surah Yunus.mp3" />
+    <Content Include="Assets\Quran\011 Surah Hud.mp3" />
+    <Content Include="Assets\Quran\012 Surah Yusuf.mp3" />
+    <Content Include="Assets\Quran\013 Surah Ar-Ra%27d.mp3" />
+    <Content Include="Assets\Quran\014 Surah Ibrahim.mp3" />
+    <Content Include="Assets\Quran\015 Surah Al-Hijr.mp3" />
+    <Content Include="Assets\Quran\016 Surah An-Nahl.mp3" />
+    <Content Include="Assets\Quran\017 Surah Bani Isra%27il.mp3" />
+    <Content Include="Assets\Quran\018 Surah Al-Kahf.mp3" />
+    <Content Include="Assets\Quran\019 Surah Maryam.mp3" />
+    <Content Include="Assets\Quran\020 Surah Ta Ha.mp3" />
+    <Content Include="Assets\Quran\021 Surah Al-Anbiya%27.mp3" />
+    <Content Include="Assets\Quran\022 Surah Al-Hajj.mp3" />
+    <Content Include="Assets\Quran\023 Surah Al-Mu%27minun.mp3" />
+    <Content Include="Assets\Quran\024 Surah An-Nur.mp3" />
+    <Content Include="Assets\Songs\Bangla Song\Baba Koto Din Dekhina Tumay By James.mp3" />
+    <Content Include="Assets\Songs\Bangla Song\Bangla Oldies   O RE NIL DORIYA.mp3" />
+    <Content Include="Assets\Songs\English Song\Alan Walker - Faded.mp3" />
+    <Content Include="Assets\Songs\English Song\Bon Jovi - Its My Life.mp3" />
+    <Content Include="Assets\Songs\Hindi Song\3 - Why This Kolaveri Di Official Video  Dhanush Anirudh.mp3" />
+    <Content Include="Assets\Songs\Hindi Song\Full Video Galliyan Song  Ek Villain  Ankit Tiwari  Sidharth Malhotra  Shraddha Kapoor.mp3" />
+    <Content Include="Assets\Sounds\Alarm.mp3" />
+    <Content Include="Assets\Sounds\intro-music.mp3" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EASendMail">
+      <Version>7.3.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="MyToolkit.Extended">
+      <Version>2.5.16</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Birer Rokte Protisthito Desh\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Boi\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Dekhe Elam Nayagra\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Dui Tire\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Februaryr gan\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Football Kheloar\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Ghasful\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Hati ar sealer golpo\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Himaloyer Sirse Bangladesher Potaka\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Kakon Mala\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Matir Niche Je Sohor\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Obak Jolpan\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Parthona\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Rordo lekhe joy\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Shoker Mritsilpo\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Sobdo Dushon\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Sodesh\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Songkolpo\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Soronio Jara Chirodin\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Sundorboner prani\" />
+    <Folder Include="Assets\NCTB\Class 5\Amar Bangla Boi\Vabuk Cheleti\" />
+    <Folder Include="Assets\NCTB\Class 5\Bangladesh And Bisho\" />
+    <Folder Include="Assets\NCTB\Class 5\English For Today\" />
+    <Folder Include="Assets\NCTB\Class 5\Hindu Religion\" />
+    <Folder Include="Assets\NCTB\Class 5\Islam Religion\" />
+    <Folder Include="Assets\NCTB\Class 5\Prathomic Biggan\" />
+    <Folder Include="Assets\NCTB\Class 5\Prathomic Gonit\" />
+    <Folder Include="Assets\NCTB\Class 6\Ananda Path\" />
+    <Folder Include="Assets\NCTB\Class 6\Bangla Grammer\" />
+    <Folder Include="Assets\NCTB\Class 6\Bangladesh And Bisho\" />
+    <Folder Include="Assets\NCTB\Class 6\Biggan\" />
+    <Folder Include="Assets\NCTB\Class 6\Charupath\" />
+    <Folder Include="Assets\NCTB\Class 6\English For Today\" />
+    <Folder Include="Assets\NCTB\Class 6\Garostho Biggan\" />
+    <Folder Include="Assets\NCTB\Class 6\Hindu Religion\" />
+    <Folder Include="Assets\NCTB\Class 6\Islam Religion\" />
+    <Folder Include="Assets\NCTB\Class 6\Kormo shikka\" />
+    <Folder Include="Assets\NCTB\Class 6\Krishi ShiKkha\" />
+    <Folder Include="Assets\NCTB\Class 6\Sharerik Shikkha\" />
+    <Folder Include="Assets\NCTB\Class 6\Tottho Projokti\" />
+    <Folder Include="Assets\NCTB\Class 6\Vasha O Songkriti\" />
+    <Folder Include="Assets\NCTB\Class 7\Ananda Path\" />
+    <Folder Include="Assets\NCTB\Class 7\Bangla Grammer\" />
+    <Folder Include="Assets\NCTB\Class 7\Bangladesh And Bisho\" />
+    <Folder Include="Assets\NCTB\Class 7\Biggan\" />
+    <Folder Include="Assets\NCTB\Class 7\Charupath\" />
+    <Folder Include="Assets\NCTB\Class 7\English For Today\" />
+    <Folder Include="Assets\NCTB\Class 7\Garostho Biggan\" />
+    <Folder Include="Assets\NCTB\Class 7\Hindu Religion\" />
+    <Folder Include="Assets\NCTB\Class 7\Islam Religion\" />
+    <Folder Include="Assets\NCTB\Class 7\Kormo shikka\" />
+    <Folder Include="Assets\NCTB\Class 7\Krishi ShiKkha\" />
+    <Folder Include="Assets\NCTB\Class 7\Sharerik Shikkha\" />
+    <Folder Include="Assets\NCTB\Class 7\Tottho Projokti\" />
+    <Folder Include="Assets\NCTB\Class 7\Vasha O Songkriti\" />
+    <Folder Include="Assets\NCTB\Class 8\Ananda Path\" />
+    <Folder Include="Assets\NCTB\Class 8\Bangla Grammer\" />
+    <Folder Include="Assets\NCTB\Class 8\Bangladesh O Bissho\" />
+    <Folder Include="Assets\NCTB\Class 8\Charu O Karukala\" />
+    <Folder Include="Assets\NCTB\Class 8\English for Today\" />
+    <Folder Include="Assets\NCTB\Class 8\Garostha Biggan\" />
+    <Folder Include="Assets\NCTB\Class 8\Gonit\" />
+    <Folder Include="Assets\NCTB\Class 8\Hindu Religion\" />
+    <Folder Include="Assets\NCTB\Class 8\Islam Religion\" />
+    <Folder Include="Assets\NCTB\Class 8\Kormo O Jibonmuki\" />
+    <Folder Include="Assets\NCTB\Class 8\Krishi Shikka\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Amader Lokosilpo\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Bangla Noboborsho\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Bangla Vashar Jonmokotha\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Ebarer Songram Sadhinotar Songram\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Mondur Pothe\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Otithir Sriti\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Pore Pawa\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Silpokolar Nana Dik\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Sukhi Manush\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\ToiloChitrer Vut\" />
+    <Folder Include="Assets\NCTB\Class 8\Shahitto Konoka\Vab O Kaj\" />
+    <Folder Include="Assets\NCTB\Class 8\Sharirek Shikka\" />
+    <Folder Include="Assets\NCTB\Class 8\Tottho O Jogajog\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Accounting\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Agriculture studies\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Art and Crafts\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Grammer\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sahitto\01suva\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sahitto\04pollisomaj\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sahitto\05amati\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sahitto\06mohammad\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sahitto\07nilgas\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sahitto\08upekhito\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sahitto\09sikhaomonussoto\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sahitto\10probasbondhu\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangla Sohpath\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bangladesh And Bisho\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Bebshay Uddag\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Biology\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Career Education\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Chemistry\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Civics and Citizenship\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Compositions\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Computer Study\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Economics\" />
+    <Folder Include="Assets\NCTB\Class 9-10\English For Today\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Finance and Banking\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Geography and Environment\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Gonit\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Higher Mthematics\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Hindu Religion\" />
+    <Folder Include="Assets\NCTB\Class 9-10\History of Bangladesh and World\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Home Science\" />
+    <Folder Include="Assets\NCTB\Class 9-10\ICT\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Islam Religion\" />
+    <Folder Include="Assets\NCTB\Class 9-10\Physics\" />
+    <Folder Include="Assets\Novels\Anisul Hoque\" />
+    <Folder Include="Assets\Novels\Famous Novels\" />
+    <Folder Include="Assets\Novels\Famous Short Stories\" />
+    <Folder Include="Assets\Novels\Humayun Azad\" />
+    <Folder Include="Assets\Novels\Johir Rayhan\" />
+    <Folder Include="Assets\Novels\Kazi Nazrul Islam\" />
+    <Folder Include="Assets\Novels\Masud Rana\" />
+    <Folder Include="Assets\Novels\Rabindranath Tagore\" />
+    <Folder Include="Assets\Novels\Rokib Hasan\" />
+    <Folder Include="Assets\Novels\Samaresh Majumdar\" />
+    <Folder Include="Assets\Novels\Shirshendu Mukhopadhay\" />
+    <Folder Include="Assets\Novels\Sunil ganapathy\" />
+    <Folder Include="Assets\Novels\Tarasankar Bandyopadhyay\" />
+    <Folder Include="Assets\Novels\Taslima Nasrin\" />
+    <Folder Include="Assets\Songs\Top rated Song\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsIoT, Version=10.0.16299.0">
+      <Name>Windows IoT Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

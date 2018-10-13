@@ -1,0 +1,251 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    Loaded="Page_Loaded"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_lat" Margin="54,306,0,0" Text="Latitude" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <Button Content="Time" x:Name="btn_time" Click="btn_time_Click" HorizontalAlignment="Left" Margin="996,389,0,0" VerticalAlignment="Top"  Width="57"/>
+        <Button Content="Date" x:Name="btn_date" Click="btn_date_Click" HorizontalAlignment="Left" Margin="1060,389,0,0" VerticalAlignment="Top"  Width="52"/>
+        <Button Content="Calc" x:Name="btn_calculator" Click="btn_calculator_Click" HorizontalAlignment="Left" Margin="1120,389,0,0" VerticalAlignment="Top"  Width="49"/>
+        <Button Content="Alarm" x:Name="btn_alarm" Click="btn_alarm_Click" HorizontalAlignment="Left" Margin="1176,389,0,0" VerticalAlignment="Top"  Width="58"/>
+        <Button Content="Novels" x:Name="btn_novels" Click="btn_novels_Click" HorizontalAlignment="Left" Margin="996,426,0,0" VerticalAlignment="Top"  Width="57"/>
+        <Button Content="Nctb" x:Name="btn_nctb" Click="btn_nctb_Click" HorizontalAlignment="Left" Margin="1060,426,0,0" VerticalAlignment="Top"  Width="52"/>
+        <Button Content="song" x:Name="btn_song" Click="btn_song_Click" HorizontalAlignment="Left" Margin="1120,426,0,0" VerticalAlignment="Top"  Width="51"/>
+        <Button Content="OCR" x:Name="btn_ocr" Click="btn_ocr_Click" HorizontalAlignment="Left" Margin="1176,426,0,0" VerticalAlignment="Top"  Width="58"/>
+        <Button Content="wthr" x:Name="btn_weather" Click="btn_weather_Click" HorizontalAlignment="Left" Margin="996,463,0,0" VerticalAlignment="Top"  Width="57"/>
+        <Button Content="Lctn" x:Name="btn_location" Click="btn_location_Click" HorizontalAlignment="Left" Margin="1060,463,0,0" VerticalAlignment="Top"  Width="52"/>
+        <Button Content="News" x:Name="btn_News" Click="btn_News_Click" HorizontalAlignment="Left" Margin="1116,463,0,0" VerticalAlignment="Top"  Width="56"/>
+        <Button Content="MSG" x:Name="btn_msg" Click="btn_msg_Click" HorizontalAlignment="Left" Margin="1176,463,0,0" VerticalAlignment="Top"  Width="58"/>
+        <Button Content="1" x:Name="btn_1" Click="btn_1_Click" HorizontalAlignment="Left" Margin="54,103,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="V" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="2" x:Name="btn_2" Click="btn_2_Click"  HorizontalAlignment="Left" Margin="110,102,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="G" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="3" x:Name="btn_3" Click="btn_3_Click"  HorizontalAlignment="Left" Margin="166,103,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="T" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="4" x:Name="btn_4" Click="btn_4_Click" HorizontalAlignment="Left" Margin="54,140,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="B" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="5" x:Name="btn_5" Click="btn_5_Click"  HorizontalAlignment="Left" Margin="110,139,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="H" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="6" x:Name="btn_6" Click="btn_6_Click"  HorizontalAlignment="Left" Margin="166,140,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="Y" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="8" x:Name="btn_8" Click="btn_8_Click" HorizontalAlignment="Left" Margin="110,176,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="J" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="7" x:Name="btn_7" Click="btn_7_Click" HorizontalAlignment="Left" Margin="54,177,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="N" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="9" x:Name="btn_9"  Click="btn_9_Click" HorizontalAlignment="Left" Margin="166,176,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="U" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="0" x:Name="btn_0" Click="btn_0_Click"  HorizontalAlignment="Left" Margin="54,214,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="M" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="." x:Name="btn_dot" Click="btn_dot_Click" HorizontalAlignment="Left" Margin="110,213,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="K" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="Back" x:Name="btn_back" Click="btn_back_Click" HorizontalAlignment="Left" Margin="16,24,0,0" VerticalAlignment="Top"  Width="57" Height="69">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="C" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="Big Button"  x:Name="btn_bigButton" Click="btn_bigButton_Click" HorizontalAlignment="Left" Margin="80,24,0,0" VerticalAlignment="Top"  Width="109" Height="32">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="D" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+
+        <Button Content="Next" x:Name="btn_next" Click="btn_next_Click"  HorizontalAlignment="Left" Margin="195,26,0,0" VerticalAlignment="Top"  Width="56" Height="69">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="R" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="Refresh" x:Name="btn_refresh" Click="btn_refresh_Click" HorizontalAlignment="Left" Margin="81,61,0,0" VerticalAlignment="Top"  Width="109" Height="32">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="F" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <Button Content="=" x:Name="btn_answer" Click="btn_answer_Click" HorizontalAlignment="Left" Margin="166,213,0,0" VerticalAlignment="Top"  Width="51">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="I" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_time" Margin="54,252,0,0" Text="00:00:00" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="txt_time_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_date" Margin="54,269,0,0" Text="dd/mm/yyyy" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_temp" Margin="54,342,0,0" Text="temparature" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_humidity" Margin="56,393,0,0" Text="Humidity" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <ListBox Height="118" x:Name="list_novels" SelectionChanged="list_novels_SelectionChanged" Margin="318,19,872,0" VerticalAlignment="Top"/>
+        <ListBox Height="118" x:Name="list_class" SelectionChanged="list_class_SelectionChanged" Margin="417,19,773,0" VerticalAlignment="Top"/>
+        <ListBox Height="118" x:Name="list_subject" SelectionChanged="list_subject_SelectionChanged" Margin="514,19,651,0" VerticalAlignment="Top"/>
+        <ListBox Height="118" x:Name="list_topic" SelectionChanged="list_topic_SelectionChanged" Margin="634,19,541,0" VerticalAlignment="Top"/>
+        <CheckBox  Content="Novels" x:Name="check_novels" HorizontalAlignment="Left" Margin="18,481,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="Writer" x:Name="check_writerChoosed" HorizontalAlignment="Left" Margin="104,481,0,0" VerticalAlignment="Top" Width="71"/>
+        <CheckBox  Content="NCTB" x:Name="check_nctb" HorizontalAlignment="Left" Margin="312,481,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="Subject" x:Name="check_subject" HorizontalAlignment="Left" Margin="104,513,0,0" VerticalAlignment="Top" Width="71"/>
+        <CheckBox  Content="Topic" x:Name="check_topic" HorizontalAlignment="Left" Margin="190,513,0,0" VerticalAlignment="Top" Width="69"/>
+        <CheckBox  Content="Class" x:Name="check_Class" HorizontalAlignment="Left" Margin="18,507,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <CheckBox.RenderTransform>
+                <CompositeTransform Rotation="-0.335"/>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_wind" Margin="54,360,0,0" Text="Wind" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.618"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_pressure" Margin="55,412,0,0" Text="Pressure" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_weatherComment" Margin="55,377,0,0" Text="Weather Update" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <MediaElement x:Name="media_speech" HorizontalAlignment="Left" Height="100" Margin="38,584,0,0" VerticalAlignment="Top" Width="100"/>
+        <MediaElement x:Name="media_novel" HorizontalAlignment="Left" Height="100" Margin="38,584,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <CheckBox  Content="Alarm Minute" x:Name="check_alrmMinute" HorizontalAlignment="Left" Margin="213,537,0,0" VerticalAlignment="Top" Width="71"/>
+        <CheckBox  Content="Alarm Hour" Checked="check_alrmHour_Checked"  x:Name="check_alrmHour" HorizontalAlignment="Left" Margin="104,539,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <CheckBox.RenderTransform>
+                <CompositeTransform Rotation="-0.335"/>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <CheckBox  Content="Alarm"   x:Name="check_alarm" Checked="check_alarm_Checked" HorizontalAlignment="Left" Margin="19,535,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <CheckBox.RenderTransform>
+                <CompositeTransform Rotation="-0.335"/>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+
+        <MediaElement x:Name="media_Alarm" HorizontalAlignment="Left" Height="100" Margin="697,258,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <MediaElement x:Name="media_SystemSound" HorizontalAlignment="Left" Height="100" Margin="697,258,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <MediaElement x:Name="media_music" HorizontalAlignment="Left" Height="100" Margin="674,205,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Margin="12,456,0,0" Text="" VerticalAlignment="Top"/>
+        <CheckBox Content="Calculator" x:Name="check_calculator" HorizontalAlignment="Left" Margin="18,568,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="first variable" x:Name="check_variable1" HorizontalAlignment="Left" Margin="115,567,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="second variable" x:Name="check_variable2"  HorizontalAlignment="Left" Margin="326,567,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_v1" HorizontalAlignment="Left" Margin="81,456,0,0" Text="" VerticalAlignment="Top" TextChanged="txt_v1_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_v2" Margin="150,456,0,0" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_calAnswer" HorizontalAlignment="Left" Margin="219,456,0,0" Text="" VerticalAlignment="Top"/>
+        <ListBox Height="118" x:Name="list_songBangla"  Margin="318,156,848,0" VerticalAlignment="Top" SelectionChanged="list_songBangla_SelectionChanged"/>
+        <ListBox Height="118" x:Name="list_songEnglish"  Margin="439,156,727,0" VerticalAlignment="Top" SelectionChanged="list_songEnglish_SelectionChanged"/>
+        <ListBox Height="118" x:Name="list_songHindi"  Margin="559,156,607,0" VerticalAlignment="Top" SelectionChanged="list_songHindi_SelectionChanged"/>
+        <ListBox Height="118" x:Name="list_songCategory"  Margin="678,156,488,0" VerticalAlignment="Top" SelectionChanged="list_songCategory_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_location" Margin="56,432,0,0" Text="Location" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <CheckBox  Content="Menu" x:Name="check_menu" HorizontalAlignment="Left" Margin="17,595,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="Refresh" x:Name="check_refresh" HorizontalAlignment="Left" Margin="109,595,0,0" VerticalAlignment="Top" Width="82"/>
+        <ListBox Height="118" x:Name="list_menuitem" SelectionChanged="list_menuitem_SelectionChanged" Margin="744,19,422,0" VerticalAlignment="Top"/>
+        <ListBox Height="118" x:Name="list_calcEquation" SelectionChanged="list_calcEquation_SelectionChanged" Margin="797,156,369,0" VerticalAlignment="Top"/>
+        <CheckBox Content="equation" x:Name="check_calcEquation"   HorizontalAlignment="Left" Margin="231,567,0,0" VerticalAlignment="Top"/>
+        <CheckBox  Content="Song" x:Name="check_song" HorizontalAlignment="Left" Margin="16,625,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="Song Category" x:Name="check_songCategory" HorizontalAlignment="Left" Margin="109,625,0,0" VerticalAlignment="Top" Width="147"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_lon" Margin="54,324,0,0" Text="Longitude" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_ID" Margin="54,289,0,0" Text="0001" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <Image x:Name="PreviewImage" HorizontalAlignment="Left" MaxWidth="600" Margin="744,302,0,0" Width="536"/>
+        <CaptureElement x:Name="PreviewControl" Visibility="Collapsed" HorizontalAlignment="Left" Width="600" Margin="0,64,-1360,10"/>
+        <TextBox x:Name="txt_result" HorizontalAlignment="Left" Margin="288,456,0,0" Text="" VerticalAlignment="Top"/>
+        <CheckBox  Content="ocr" x:Name="check_ocr" HorizontalAlignment="Left" Margin="18,653,0,0" VerticalAlignment="Top" Width="82"/>
+        <WebView HorizontalAlignment="Left" Visibility="Collapsed" x:Name="WebNewsUrl" LoadCompleted="WebNewsUrl_LoadCompleted" Height="64" Margin="539,463,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txt_NewsUrl" Margin="109,291,0,0" Text="Youtube Url" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <ListBox Height="118" x:Name="list_quran" SelectionChanged="list_quran_SelectionChanged" Margin="919,156,247,0" VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
+        <Button Content="quran" x:Name="btn_Quran" Click="btn_Quran_Click" HorizontalAlignment="Left" Margin="996,500,0,0" VerticalAlignment="Top"  Width="58"/>
+        <CheckBox  Content="quran" x:Name="check_quran" HorizontalAlignment="Left" Margin="109,653,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="quran number" x:Name="check_quran_number" HorizontalAlignment="Left" Margin="185,653,0,0" VerticalAlignment="Top" Width="125" RenderTransformOrigin="0.5,0.5">
+            <CheckBox.RenderTransform>
+                <CompositeTransform Rotation="-0.833"/>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <CheckBox  Content="Refresh number" x:Name="check_refresh_number" HorizontalAlignment="Left" Margin="198,595,0,0" VerticalAlignment="Top" Width="184"/>
+        <TextBox HorizontalAlignment="Left" Margin="1061,267,0,0" Text="" Name="txt_speechResult" TextChanged="txt_speechResult_TextChanged" VerticalAlignment="Top" Width="202" Height="35"/>
+        <TextBox HorizontalAlignment="Left" Name="txt_alarmHours" Margin="613,651,0,0" Text="" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="txt_alarmMinutes" Margin="692,651,0,0" Text="" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_math1" Margin="778,651,0,0" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_math2" Margin="916,651,0,0" Text="" VerticalAlignment="Top" Width="134"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_mathAnswer" Margin="1072,651,0,0" Text="" VerticalAlignment="Top" Width="136"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_surahNumber" Margin="1282,653,0,0" Text="" VerticalAlignment="Top" Width="54"/>
+        <Button Content="Button" Name="btn1212" Click="btn1212_Click" HorizontalAlignment="Left" Margin="1147,348,0,0" VerticalAlignment="Top"/>
+        <CheckBox  Content="Voice Contrl" x:Name="check_voicecntrl" HorizontalAlignment="Left" Margin="320,653,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="novelChoose" x:Name="check_novelChoosed" HorizontalAlignment="Left" Margin="192,481,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="Writting mode" x:Name="check_writting" HorizontalAlignment="Left" Margin="875,7,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="button Tapped" x:Name="check_tap" Checked="check_tap_Checked" HorizontalAlignment="Left" Margin="875,51,0,0" VerticalAlignment="Top" Width="82"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_alp" Margin="983,66,0,0" Text="" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_wrd" TextChanged="txt_wrd_TextChanged" Margin="983,104,0,0" Text="" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_sentance" Margin="1059,19,0,0" Text="" VerticalAlignment="Top" Height="63" Width="204"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_tap" TextChanged="txt_tap_TextChanged_1" Margin="983,26,0,0" Text="" VerticalAlignment="Top"/>
+        <CheckBox  Content="txt Number" x:Name="check_numberinput" Checked="check_tap_Checked" HorizontalAlignment="Left" Margin="875,95,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox Content="Email" Name="check_email" HorizontalAlignment="Left" Margin="522,658,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txt_paragraph" Margin="1057,91,0,0" Text="" VerticalAlignment="Top" Height="87" Width="208"/>
+        <CheckBox Content="msging" Name="check_msg" HorizontalAlignment="Left" Margin="434,656,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Name="list_emailaddress" SelectionChanged="list_emailaddress_SelectionChanged" Height="109" Margin="325,290,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Content="cntct" Name="btn_contact"  HorizontalAlignment="Left" Margin="1062,503,0,0" VerticalAlignment="Top" Width="57" Height="32" Click="btn_contact_Click"/>
+        <CheckBox Content="contactlist" x:Name="check_contact" HorizontalAlignment="Left" Margin="244,627,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" x:Name="list_contactFeatures" SelectionChanged="list_contactFeatures_SelectionChanged" Height="106" Margin="444,294,0,0" VerticalAlignment="Top" Width="110"/>
+        <CheckBox Content="contactlist feature" x:Name="check_contactFeatures" HorizontalAlignment="Left" Margin="347,628,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left"  Margin="1059,225,0,0" x:Name="txt_number" Text=""  TextWrapping="Wrap"
+            AcceptsReturn="True" VerticalAlignment="Top" Height="34" Width="205"/>
+        <CheckBox Content="new contact" x:Name="check_newContact" HorizontalAlignment="Left" Margin="499,631,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="see existing" x:Name="check_seeExisting" HorizontalAlignment="Left" Margin="614,626,0,0" VerticalAlignment="Top"/>
+        <Button Content="notes" Click="btn_notes_Click" HorizontalAlignment="Left" Name="btn_notes" Margin="1125,505,0,0" VerticalAlignment="Top" Height="29" Width="56"/>
+        <ListBox HorizontalAlignment="Left" Name="list_notesFeatures" SelectionChanged="list_notesFeatures_SelectionChanged" Height="100" Margin="562,300,0,0" VerticalAlignment="Top" Width="126"/>
+        <ListBox HorizontalAlignment="Left" x:Name="list_notes" SelectionChanged="list_notes_SelectionChanged" Height="100" Margin="701,302,0,0" VerticalAlignment="Top" Width="126"/>
+        <ListBox HorizontalAlignment="Left" x:Name="list_recordings" SelectionChanged="list_recordings_SelectionChanged" Height="100" Margin="839,306,0,0" VerticalAlignment="Top" Width="126"/>
+        <CheckBox  Content="noteRecording" x:Name="check_notesRecordings" HorizontalAlignment="Left" Margin="342,597,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="notesfeatures" x:Name="check_notesFeatures"  HorizontalAlignment="Left" Margin="470,603,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="note select" x:Name="check_notesSelect" HorizontalAlignment="Left" Margin="598,606,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="note txt cmpt" x:Name="check_notetxtcomplete" HorizontalAlignment="Left" Margin="705,607,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="note name" x:Name="check_noteName" HorizontalAlignment="Left" Margin="826,606,0,0" VerticalAlignment="Top" Width="93"/>
+        <CheckBox  Content="rcd select" x:Name="check_rcdSelect" HorizontalAlignment="Left" Margin="935,608,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="rcd strt" x:Name="check_rcdStrt" HorizontalAlignment="Left" Margin="1032,609,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="rcd name" x:Name="check_rcdName" HorizontalAlignment="Left" Margin="1110,608,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="saved note" x:Name="check_savedNotes" HorizontalAlignment="Left" Margin="597,582,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="saved recordings" x:Name="check_savedRecordings" HorizontalAlignment="Left" Margin="934,582,0,0" VerticalAlignment="Top" Width="167"/>
+        <TextBox HorizontalAlignment="Left"  Margin="1059,185,0,0" x:Name="txt_notesnew" Text=""  TextWrapping="Wrap"
+            AcceptsReturn="True" VerticalAlignment="Top" Height="34" Width="205"/>
+        <CheckBox  Content="saved notes name selct" x:Name="check_savedNotesNameSelect" HorizontalAlignment="Left" Margin="705,585,0,0" VerticalAlignment="Top" Width="207"/>
+        <ListBox HorizontalAlignment="Left" Height="115" Name="list_examMode" SelectionChanged="list_examMode_SelectionChanged" Margin="446,409.332,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ListBox.RenderTransform>
+                <CompositeTransform SkewY="1.149" TranslateY="1.313"/>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <CheckBox  Content="Exam mode" x:Name="check_ExamMode" HorizontalAlignment="Left" Margin="597,558,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="teacher Email" x:Name="check_TchrEmail" HorizontalAlignment="Left" Margin="706,558,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="Exam Writting Cmpt" x:Name="check_examWrittingComplete" HorizontalAlignment="Left" Margin="1013,556,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button Content="Exm" Name="btn_ExamMode" Click="btn_ExamMode_Click" HorizontalAlignment="Left" Margin="1184,506,0,0" VerticalAlignment="Top" Width="53" Height="28"/>
+        <TextBox HorizontalAlignment="Left" Margin="1061,310,0,0" Text="" x:Name="txt_teacherEmail"  VerticalAlignment="Top" Width="202" Height="31"/>
+        <CheckBox  Content="exam timer" x:Name="check_ExamTimer" HorizontalAlignment="Left" Margin="845,557,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="exam hour" x:Name="check_ExamHour" HorizontalAlignment="Left" Margin="845,528,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="exam Minute" x:Name="check_ExamMinute" HorizontalAlignment="Left" Margin="845,502,0,0" VerticalAlignment="Top" Width="82"/>
+        <CheckBox  Content="Exam mode" x:Name="check_ExamMode_Copy" HorizontalAlignment="Left" Margin="597,531,0,0" VerticalAlignment="Top" Width="82"/>
+
+
+    </Grid>
+</Page>
